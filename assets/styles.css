@@ -1,0 +1,35 @@
+/* assets/css/styles.css */
+body {
+    background-color: #f0f0f0; /* Light gray background */
+    font-family: Arial, sans-serif; /* Set a modern font */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px; /* Add padding around the container */
+}
+
+.box {
+    background-color: #e2e2e2; /* Default muted color */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin: 10px; /* Space between boxes */
+    width: calc(33% - 40px); /* 3 boxes per row with margin */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.box:nth-child(odd) {
+    background-color: #d1c4e9; /* Muted purple */
+}
+
+.box:nth-child(even) {
+    background-color: #ffe0b2; /* Muted orange */
+}
+
+h1, h2, p {
+    margin: 0;
+}
