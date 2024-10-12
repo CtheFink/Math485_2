@@ -1,0 +1,51 @@
+title: My Github
+description: a little about me
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://CtheFink.github.io" # the URL of your GitHub Pages site
+
+author:
+  name: "Christian Fink"
+  email: "christian.fink@my.wheaton.edu"
+
+# Social Media Links
+social:
+  github: "CtheFink"
+  venmo: "@CtheFink"
+  linkedin: "Christian Fink"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Customization options
+highlighter: rouge
+permalink: pretty
+exclude: [Gemfile, Gemfile.lock]
+
+# Navigation menu
+nav:
+  - title: "Home"
+    url: /
+  - title: "About"
+    url: /about/
+  - title: "Projects"
+    url: /projects/
+  - title: "Contact"
+    url: /contact/
+
+# SEO settings
+seo:
+  keywords: ["keyword1", "keyword2", "keyword3"]
+  author: "Christian Fink"
+
+# Pagination settings
+paginate: 5 # number of posts per page
+paginate_path: "/page/:num/"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Google Analytics (if applicable)
+google_analytics: "UA-XXXXX-Y" # Your tracking ID
