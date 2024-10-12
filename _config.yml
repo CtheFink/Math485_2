@@ -1,7 +1,7 @@
 # Site settings
-title: Your Name's Portfolio
+title: Christian's Portfolio
 description: A showcase of my projects and skills
-url: "https://yourusername.github.io"
+url: "https://CtheFink.github.io"
 
 # Build settings
 markdown: kramdown
@@ -23,8 +23,8 @@ plugins:
   - jekyll-seo-tag
 
 # Custom variables
-github_username: yourusername
-linkedin_username: yourlinkedinusername
+github_username: CtheFink
+linkedin_username: Christian Fink
 
 # Collections
 collections:
