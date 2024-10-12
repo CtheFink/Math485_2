@@ -6,6 +6,37 @@
     <title>Christian's Portfolio</title>
     <link rel="stylesheet" href="styles.css"> <!-- Optional CSS for styling -->
     <style>
+        body {
+            background-color: #f0f0f0; /* Light gray background */
+            font-family: Arial, sans-serif; /* Set a modern font */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px; /* Add padding around the container */
+        }
+
+        .box {
+            background-color: #e2e2e2; /* Default muted color */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Padding inside the box */
+            margin: 10px; /* Space between boxes */
+            width: calc(33% - 40px); /* 3 boxes per row with margin */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+        }
+
+        .box:nth-child(odd) {
+            background-color: #d1c4e9; /* Muted purple */
+        }
+
+        .box:nth-child(even) {
+            background-color: #ffe0b2; /* Muted orange */
+        }
+
         .content {
             display: flex; /* Use flexbox to arrange items in a row */
             align-items: flex-start; /* Align items at the start */
@@ -15,6 +46,10 @@
             width: 150px; /* Set the image width */
             margin-right: 20px; /* Add space between the image and text */
         }
+
+        h1, h2, p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
@@ -23,41 +58,44 @@
         <p>Hello! My name is <strong>Christian Fink</strong>. 
             I am a <strong>Senior</strong> studying <strong>Applied Mathematics</strong>. 
             This portfolio showcases my work conducted in <strong>MATH 485</strong>.</p>
-            
-        <h2>My Pets</h2>
-        <div class="content">
-            <img src="images/IMG_0900.jpg" alt="A photo of my dog" class="pet-photo">
-            <p>Besides studying math, I like to train dogs in my spare time. I got my dog fiveish years ago from a rescue I was working at.
-            I have a broad range of interests including data science, chess, playing violin, music, working on cars and motorcycles, and playing soccer.
-            My dog's name is Petunia and she is a 1/4 heeler and 3/4 aussie mix.</p>
-        
-        </div>
     </header>
     
-    <section>
-        <h2>Featured Work</h2>
-        <p>Below are links to a data analysis project conducted in MATH 485:</p>
-        <ul>
-            <li><a href="Project 1 - Johnsen Fink.html" target="_blank">View My Work (HTML)</a></li>
-            <li><a href="Project 1 - Johnsen Fink.pdf" target="_blank">Download My Work (PDF)</a></li>
-            <li><a href="Project 1 - Johnsen Fink.ipynb" target="_blank">Download and Run My Notebook</a></li>
-        </ul>
-        <p>Below are links to an example homework conducted in MATH 485:</p>
-        <ul>
-            <li><a href="Homework 2 MATH 485.html" target="_blank">View My Work (HTML)</a></li>
-            <li><a href="Homework 2 MATH 485.pdf" target="_blank">Download My Work (PDF)</a></li>
-            <li><a href="Homework 2 MATH 485.ipynb" target="_blank">Download and Run My Notebook</a></li>
-        </ul>
-    </section>
+    <div class="container">
+        <div class="box">
+            <h2>My Pets</h2>
+            <div class="content">
+                <img src="images/IMG_0900.jpg" alt="A photo of my dog" class="pet-photo">
+                <p>Besides studying math, I like to train dogs in my spare time. I got my dog fiveish years ago from a rescue I was working at.
+                I have a broad range of interests including data science, chess, playing violin, music, working on cars and motorcycles, and playing soccer.
+                My dog's name is Petunia and she is a 1/4 heeler and 3/4 aussie mix.</p>
+            </div>
+        </div>
 
-    <section>
-        <h2>Other Resources</h2>
-        <p>Here are links to other data sources that may be useful:</p>
-        <ul>
-             <li><a href="https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2" target="_blank">Data from the linked project</a></li>
-            <li><a href="https://wallethub.com/edu/states-with-highest-lowest-tax-burden/20494" target="_blank">Data for future study</a></li>
-        </ul>
-    </section>
+        <div class="box">
+            <h2>Featured Work</h2>
+            <p>Below are links to a data analysis project conducted in MATH 485:</p>
+            <ul>
+                <li><a href="Project 1 - Johnsen Fink.html" target="_blank">View My Work (HTML)</a></li>
+                <li><a href="Project 1 - Johnsen Fink.pdf" target="_blank">Download My Work (PDF)</a></li>
+                <li><a href="Project 1 - Johnsen Fink.ipynb" target="_blank">Download and Run My Notebook</a></li>
+            </ul>
+            <p>Below are links to an example homework conducted in MATH 485:</p>
+            <ul>
+                <li><a href="Homework 2 MATH 485.html" target="_blank">View My Work (HTML)</a></li>
+                <li><a href="Homework 2 MATH 485.pdf" target="_blank">Download My Work (PDF)</a></li>
+                <li><a href="Homework 2 MATH 485.ipynb" target="_blank">Download and Run My Notebook</a></li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Other Resources</h2>
+            <p>Here are links to other data sources that may be useful:</p>
+            <ul>
+                <li><a href="https://www.fema.gov/openfema-data-page/disaster-declarations-summaries-v2" target="_blank">Data from the linked project</a></li>
+                <li><a href="https://wallethub.com/edu/states-with-highest-lowest-tax-burden/20494" target="_blank">Data for future study</a></li>
+            </ul>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 Christian Fink</p>
