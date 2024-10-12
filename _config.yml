@@ -31,6 +31,6 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
-    </footer>
+</footer>
 </body>
 </html>
