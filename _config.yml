@@ -26,6 +26,9 @@ plugins:
 github_username: CtheFink
 linkedin_username: Christian Fink
 
+stylesheets:
+  - /assets/styles.css
+
 # Collections
 collections:
   projects:
