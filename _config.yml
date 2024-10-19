@@ -1,0 +1,36 @@
+# Site settings
+title: Christian's Portfolio
+description: A showcase of my projects and skills
+url: "https://CtheFink.github.io"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Plugin settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Custom variables
+github_username: CtheFink
+linkedin_username: Christian Fink
+
+stylesheets:
+  - /assets/styles.css
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
